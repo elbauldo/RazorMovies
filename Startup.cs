@@ -23,7 +23,7 @@ public class Startup
         {
             services.AddDbContext<RazorPagesMovieContext>(options =>
             options.UseSqlite(
-                Configuration.GetConnectionString("RazorPagesMovieContext")));
+                Configuration.GetConnectionString("RazorPagesMovieContextDB")));
         }
         else
         {
